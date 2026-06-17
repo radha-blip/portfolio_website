@@ -1,11 +1,12 @@
-/* Black + Orange Theme */
+/* Cream + Orange Theme */
 :root {
-  --bg-black: #0a0a0a;
-  --bg-dark: #1a1a1a;
-  --orange: #FF6B00;
-  --orange-light: #FF8C42;
-  --text-white: #f5f5f5;
-  --text-gray: #b0b0b0;
+  --bg-cream: #FFF8F0;      /* main cream background */
+  --bg-white: #FFFFFF;      /* card/section background */
+  --orange: #FF6B00;        /* main orange accent */
+  --orange-dark: #E55A00;   /* darker orange for hover */
+  --text-dark: #1A1A1A;     /* primary text */
+  --text-gray: #4A4A4A;     /* secondary text */
+  --border-light: #E5E5E5;  /* subtle borders */
 }
 
 * {
@@ -16,8 +17,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--bg-black);
-  color: var(--text-white);
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
   line-height: 1.6;
 }
 
@@ -27,11 +28,12 @@ body {
 
 /* Header + Nav */
 header {
-  background: var(--bg-dark);
+  background: var(--bg-white);
   padding: 1rem 5%;
   position: sticky;
   top: 0;
   border-bottom: 2px solid var(--orange);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 nav {
@@ -43,6 +45,7 @@ nav {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
+  color: var(--text-dark);
 }
 
 .nav-links {
@@ -52,7 +55,7 @@ nav {
 }
 
 .nav-links a {
-  color: var(--text-white);
+  color: var(--text-dark);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -66,7 +69,7 @@ nav {
 .hero {
   text-align: center;
   padding: 5rem 5% 3rem;
-  background: var(--bg-dark);
+  background: var(--bg-white);
 }
 
 .profile-pic {
@@ -75,19 +78,20 @@ nav {
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid var(--orange);
-  box-shadow: 0 0 25px rgba(255, 107, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(255, 107, 0, 0.25);
   margin-bottom: 2rem;
   transition: transform 0.3s;
 }
 
 .profile-pic:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 35px rgba(255, 107, 0, 0.6);
+  box-shadow: 0 12px 35px rgba(255, 107, 0, 0.35);
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: var(--text-dark);
 }
 
 .hero h2 {
@@ -106,7 +110,7 @@ nav {
 .btn {
   display: inline-block;
   background: var(--orange);
-  color: var(--bg-black);
+  color: var(--bg-white);
   padding: 0.8rem 2rem;
   border-radius: 5px;
   text-decoration: none;
@@ -115,7 +119,7 @@ nav {
 }
 
 .btn:hover {
-  background: var(--orange-light);
+  background: var(--orange-dark);
 }
 
 /* Sections */
@@ -129,6 +133,7 @@ section h2 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
+  color: var(--text-dark);
 }
 
 .skills-grid {
@@ -138,17 +143,19 @@ section h2 {
 }
 
 .skill-card, .project-card {
-  background: var(--bg-dark);
+  background: var(--bg-white);
   padding: 1.5rem;
   border-radius: 8px;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-light);
   text-align: center;
-  transition: border 0.3s, transform 0.3s;
+  transition: border 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .skill-card:hover, .project-card:hover {
   border: 1px solid var(--orange);
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 107, 0, 0.15);
 }
 
 .project-card {
@@ -162,9 +169,16 @@ section h2 {
   margin-bottom: 0.5rem;
 }
 
+.project-card p {
+  color: var(--text-gray);
+}
+
 #contact {
   text-align: center;
-  background: var(--bg-dark);
+  background: var(--bg-white);
+  border-radius: 12px;
+  margin: 0 5% 4rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 #contact p {
@@ -176,15 +190,15 @@ section h2 {
 footer {
   text-align: center;
   padding: 2rem 5%;
-  background: var(--bg-dark);
+  background: var(--bg-white);
   color: var(--text-gray);
-  border-top: 1px solid #2a2a2a;
+  border-top: 1px solid var(--border-light);
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Add hamburger menu logic in script.js */
+    display: none;
   }
   
   .hero h1 {
@@ -194,5 +208,9 @@ footer {
   .profile-pic {
     width: 180px;
     height: 180px;
+  }
+  
+  section {
+    padding: 3rem 5%;
   }
 }
