@@ -1,231 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>B.Pooja | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.Pooja | BCA Student</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="logo">B.Pooja<span class="accent">.</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-  <!-- NAV -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo">P.</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger"><span></span><span></span></div>
-  </nav>
+  <main>
+    <section class="hero" id="about">
+      <img src="Pooja.jpg" alt="B.Pooja" class="profile-pic">
+      <h1>Hi, I'm <span class="accent">B.Pooja</span></h1>
+      <h2>BCA Student | Aspiring Developer</h2>
+      <p>Currently pursuing BCA. Passionate about Java, Python, and building web projects. Based in Chanda Nagar, Telangana.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </section>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg-text">PORTFOLIO</div>
-    <div class="hero-content">
-      <span class="badge">✦ Open to DevOps & SRE Internships</span>
-      <h1>Hi, I'm <span class="accent">B.Pooja</span><br><span class="accent">DevOps Intern</span></h1>
-      <p class="hero-sub">BTech CSE · ICFAI University, Hyderabad · CGPA: <em>9.45</em><br>Building scalable apps at the intersection of <em>Cloud</em> & <em>DevOps</em></p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-outline">Get In Touch</a>
+    <section id="skills">
+      <h2>My <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">HTML/CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">SQL</div>
       </div>
-    </div>
-    <div class="scroll-hint">scroll ↓</div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="section-label">About</div>
-    <h2 class="section-title">Who I Am</h2>
-    <div class="about-grid">
-      <div class="about-img-wrap">
-        <img src="photo.jpg" alt="B.Pooja" class="about-img-placeholder" />
-      </div>
-      <div class="about-text">
-        <p>I'm a high-performing <strong>BTech Computer Science student at ICFAI University, Hyderabad</strong> with a CGPA of <strong>9.45/10</strong>, passionate about cloud infrastructure and automation.</p>
-        <p>Skilled in <strong>Python, Java, AWS, Docker, and Kubernetes</strong>, I have hands-on experience as a DevOps Intern at Codecrux building CI/CD pipelines and cost optimization tools.</p>
-        <p>I thrive in collaborative environments and am a <strong>quick learner</strong> with a deep passion for DevOps and cloud engineering — always looking to apply my skills to real-world challenges.</p>
-        <div class="tags">
-          <span>DevOps</span>
-          <span>Kubernetes</span>
-          <span>AWS</span>
-          <span>Python</span>
-          <span>Java</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section dark-section" id="skills">
-    <div class="section-label">Skills</div>
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-icon">💻</div>
-        <h3>Programming Languages</h3>
-        <div class="skill-tags"><span>Python</span><span>Java</span><span>C</span><span>Bash</span></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">☁️</div>
-        <h3>Cloud & DevOps</h3>
-        <div class="skill-tags"><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">⚙️</div>
-        <h3>Tools & Platforms</h3>
-        <div class="skill-tags"><span>Git</span><span>GitHub Actions</span><span>Linux</span><span>Ansible</span></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🎨</div>
-        <h3>Web Technologies</h3>
-        <div class="skill-tags"><span>HTML</span><span>CSS</span><span>Flask</span><span>REST API</span></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🧠</div>
-        <h3>Core Concepts</h3>
-        <div class="skill-tags"><span>Data Structures</span><span>Algorithms</span><span>OOP</span><span>DBMS</span></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🌐</div>
-        <h3>Languages Known</h3>
-        <div class="skill-tags"><span>English</span><span>Hindi</span><span>Telugu</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="section-label">Projects</div>
-    <h2 class="section-title">What I've Built</h2>
-    <div class="projects-grid">
-
-      <div class="project-card featured">
-        <div class="project-badge">Featured</div>
-        <div class="project-icon">💰📉</div>
-        <h3>K8s Cost Optimizer</h3>
-        <p>Python + Boto3 script that analyzes AWS Cost Explorer and Kubecost data to flag idle EKS nodes and over-provisioned PVCs. Cut test cluster spend by 32%.</p>
-        <div class="project-tags">
-          <span>Python</span><span>AWS</span><span>Kubecost</span><span>EKS</span>
-        </div>
-        <a href="https://github.com/berrappagaripooja/k8s-cost-optimizer" class="project-link" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-icon">⭕❌</div>
-        <h3>Tic Tac Toe Game</h3>
-        <p>Command-line Tic Tac Toe game built in Python with 2-player mode and vs-computer mode using minimax algorithm. Features input validation, score tracking, and clean OOP design.</p>
-        <div class="project-tags">
-          <span>Python</span><span>OOP</span><span>Game Dev</span><span>Minimax</span>
-        </div>
-        <a href="https://github.com/berrappagaripooja/tic-tac-toe-python" class="project-link" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-icon">🚀</div>
-        <h3>Terraform EKS Bootstrap</h3>
-        <p>Reusable Terraform modules to spin up production-ready EKS + VPC + RDS in <10 mins. Integrated with GitHub Actions for automated apply/destroy.</p>
-        <div class="project-tags">
-          <span>Terraform</span><span>AWS EKS</span><span>GitHub Actions</span><span>IAC</span>
-        </div>
-        <a href="https://github.com/berrappagaripooja/terraform-eks" class="project-link" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section class="section dark-section" id="certifications">
-    <div class="section-label">Certifications</div>
-    <h2 class="section-title">Credentials</h2>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <div class="cert-icon">☕</div>
-        <div class="cert-body">
-          <h3>Java Programming</h3>
-          <p>Infosys Springboard / NPTEL</p>
-        </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🏅</div>
-        <div class="cert-body">
-          <h3>AWS Cloud Practitioner</h3>
-          <p>Amazon Web Services - In Progress</p>
-        </div>
-      <div class="cert-card">
-        <div class="cert-icon">🎖️</div>
-        <div class="cert-body">
-          <h3>Docker Essentials</h3>
-          <p>Codecademy</p>
-        </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🏅</div>
-        <div class="cert-body">
-          <h3>Introduction to Kubernetes</h3>
-          <p>Linux Foundation LFS158x</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section" id="education">
-    <div class="section-label">Education</div>
-    <h2 class="section-title">My Journey</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-num">01</div>
-        <div class="timeline-body">
-          <h3>BTech in Computer Science Engineering</h3>
-          <p class="inst">ICFAI University, Hyderabad</p>
-          <div class="timeline-meta">
-            <span>2022 – Present</span>
-            <span class="badge-done">CGPA: 9.45 / 10</span>
-            <span class="badge-ongoing">Ongoing</span>
+    <section id="projects">
+      <h2>My <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Tic Tac Toe Game</h3>
+          <p>Interactive 2-player Tic Tac Toe game built with HTML, CSS, and JavaScript. Includes win detection and reset functionality.</p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
           </div>
+          <a href="https://github.com/radha-blip" target="_blank" class="project-link">View Code →</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="section dark-section" id="contact">
-    <div class="section-label">Contact</div>
-    <h2 class="section-title">Let's Connect</h2>
-    <p class="contact-sub">I'm open to internships, collaborations, and new opportunities.<br>Let's build something great together.</p>
-    <div class="contact-grid">
-      <a href="mailto:berrappagaripoojabca24@ifheindia.org" class="contact-card">
-        <i class="fas fa-envelope"></i><span>berrappagaripoojabca24@ifheindia.org</span>
-      </a>
-      <a href="https://github.com/berrappagaripooja" target="_blank" class="contact-card">
-        <i class="fab fa-github"></i><span>Github Profile</span>
-      </a>
-      <a href="https://www.linkedin.com/in/bpooja" target="_blank" class="contact-card">
-        <i class="fab fa-linkedin"></i><span>LinkedIn Profile</span>
-      </a>
-      <a href="tel:+918523860826" class="contact-card">
-        <i class="fas fa-phone"></i><span>+91 8523860826</span>
-      </a>
-    </div>
-  </section>
+    <section id="certificates">
+      <h2><span class="accent">Certificates</span></h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <h3>Java Programming</h3>
+          <p>Core Java concepts, OOP, and application development</p>
+        </div>
+        <div class="cert-card">
+          <h3>Git & GitHub</h3>
+          <p>Working with Repositories, version control, branching</p>
+        </div>
+        <div class="cert-card">
+          <h3>Python AI Development</h3>
+          <p>Python basics for AI, libraries, and ML fundamentals</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <span>P.</span>
-    <p>Designed & Built by B.Pooja · 2026</p>
+    <section id="contact">
+      <h2>Get In <span class="accent">Touch</span></h2>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/b-pooja-bb5a02411?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-btn">LinkedIn</a>
+        <a href="https://github.com/radha-blip" target="_blank" class="contact-btn">GitHub</a>
+        <a href="https://bpooja123.blogspot.com" target="_blank" class="contact-btn">Blog</a>
+        <a href="mailto:bpooja.dev@gmail.com" class="contact-btn">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 B.Pooja</p>
   </footer>
 
   <script src="script.js"></script>
